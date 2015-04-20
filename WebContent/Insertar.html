@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insertar vehículos</title>
+</head>
+<body onload="carga();" >
+	<h1>Insertar un vehiculo</h1>
+	<form action="insertar.jr" method="POST" onsubmit="return valideDatos();">
+		<label for="matricula">Titulo</label><br />
+		<input id="matricula" type="text" name="matricula" value="" /><br /><br />
+		<label for="numruedas">Artista</label><br />
+		<input id="ruedas" type="text" name="ruedas" value="" /><br /><br />
+		<label for="motor">Año de edicion</label><br />
+		<input id="motor" type="text" name="motor" value="" /><br /><br />
+		<label for="marca">Tipo de obra</label><br />
+		<select id="marca" name="marca">
+			<option value="Disco">Disco</option>
+			<option value="Libro">Libro</option>
+			<option value="Pelicula">Pelicula</option>
+		</select><br /><br />
+	<button type="submit" name="submit" value="1">Insertar obra</button>
+	</form>
+</body>
+</html>
