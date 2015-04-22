@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Borrar Vehiculo</title>
-	<style type="text/css">
-			body {
-				text-align: center;
-				font-family: Verdana;
-			}
-	</style>
+
+	<meta charset="utf-8">
+	<title>Borrar Vehiculo</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
 </head>
-<body>
-<h1>Borrar vehiculo</h1>
-<div align="center">
-<form action="" method="POST" onsubmit="Borrar vehiculo();">
-<label>Inserta matricula:</label><br />
-<input id="matricula" type="text" name="matricula" value="" /><br /><br />
-<button type="submit" name="borrar" value="1">BORRAR</button>
-</form>
-</div>
-</body>
+
+<body onload="carga();">
+
+	<div id="contenedor">
+
+		<h2>Borrar vehiculo</h2>
+
+		<form action="borrarvehiculo.jr" method="POST" onsubmit="return valideDatos();">
+
+			<fieldset>
+
+				<div><label for="matricula">Insertar matricula:</label></div>
+				<div><input type="text" class="input" placeholder="matricula" /></div>
+				<div><input type="submit" class="button" value="Borrar"></div>
+				<div><input type="button" class="button" id="inicio" value="Inicio" Onclick="location.href='index.html'"></div> 
+
+			</fieldset>
+
+		</form>
+
+	</div>
+
+</body>	
 </html>

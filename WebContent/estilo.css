@@ -1,0 +1,90 @@
+@CHARSET "ISO-8859-1";
+
+/* ESTILOS CSS */
+/* ---------- GENERAL ---------- */
+body {
+
+	background-color: #C0C0C0;
+	color: #000;
+	font-family: "Varela Round", Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.5em;
+}
+
+input {
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+}
+
+form {
+	margin: 0px;
+}
+
+/* ---------- ID LOGIN ---------- */
+
+#contenedor {
+	margin: 50px auto;
+	width: 400px;
+}
+
+#contenedor h2 {
+	text-align: center;
+	margin: 0px;
+	background-color: #000000;
+	border-radius: 20px 20px 0 0;
+	color: #fff;
+	font-size: 28px;
+	padding: 20px 26px;
+}
+
+#contenedor fieldset {
+	margin: 0px;
+	border: 0px;
+	background-color: #fff;
+	border-radius: 0 0 20px 20px;
+	padding: 20px 26px;
+}
+
+#contenedor fieldset div {
+	color: #777;
+	margin-bottom: 14px;
+}
+
+#contenedor fieldset div:last-child {
+	margin-bottom: 0;
+}
+
+#contenedor fieldset input {
+	border-radius: 3px;
+}
+
+.input {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+	width: 328px;
+}
+
+.number {
+	background-color: #eee;
+	color: #777;
+	padding: 4px 10px;
+}
+
+.button {
+	background-color: #33cc77;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	padding: 4px 0;
+	width: 50%;
+}
+
+.button:hover {
+	background-color: #28ad63;
+}
+
+#inicio { background-color: #000;}

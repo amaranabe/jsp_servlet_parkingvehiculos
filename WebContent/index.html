@@ -1,30 +1,33 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<title>Parking Vehiculos</title>
-<style type="text/css">
-		body {
-			background-color: #4B9263;
-			text-align: center;
-			font-family: Verdana;
-		}
-		input {
-			width: 200px;
-		}
-</style>
+
+	<meta charset="utf-8">
+
+	<title>Parking Vehiculos</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Varela+Round">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	
 </head>
+
 <body>
-<h1>MENU</h1>
-<p>Elija una opción</p>
-<div align="center">
-<table>
-<tr><td><input type="button" value="NUEVO VEHICULO" onClick="location.href='insertar.html'" /></td></tr>
-<tr><td><input type="button" value="BUSCAR VEHICULO" onClick="location.href='buscar.html'" /></td></tr>
-<tr><td><input type="button" value="BORRAR VEHICULO" onClick="location.href='borrar.html'" /></td></tr>
-<tr><td><input type="button" value="LISTAR VEHICULOS" onClick="location.href='ListarVehiculos.html'" /></td>
-</tr>
-</table>
-</div>
-</body>
+
+	<div id="contenedor">
+
+		<h2>Menú</h2>
+		<form action="#" method="POST">
+			<fieldset>
+				<div><label>Elige una opción:</label></div>
+				<div><input type="button" class="button" value="NUEVO VEHICULO" onClick="location.href='insertar.html'" /></div>
+				<div><input type="button" class="button" value="BUSCAR VEHICULO" onClick="location.href='buscar.html'" /></div>
+				<div><input type="button" class="button" value="BORRAR VEHICULO" onClick="location.href='borrar.html'" /></div>
+				<div><input type="button" class="button" value="LISTAR VEHICULOS" onClick="location.href='ListarVehiculos.html'" /></div>
+
+			</fieldset>
+
+		</form>
+
+	</div>
+</body>	
 </html>

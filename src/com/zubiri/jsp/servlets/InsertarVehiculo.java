@@ -14,8 +14,10 @@ import com.zubiri.parking.Coche;
  * Servlet implementation class insertarcoche
  */
 public class InsertarVehiculo extends HttpServlet {
+	
+	
 	private static final long serialVersionUID = 1L;
-	private ArrayList<Coche> listaCoches = new ArrayList<>();
+	private ArrayList<Coche> listaCoches = new ArrayList<Coche>();
        
     /**
      * @see HttpServlet#HttpServlet()
@@ -25,17 +27,24 @@ public class InsertarVehiculo extends HttpServlet {
         // TODO Auto-generated constructor stub
     }
 
+	public void init()
+	{
+		System.out.println("Iniciando Insertar Vehiculo");
+	}
+	
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
 		// TODO Auto-generated method stub
 	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
 
 		response.setContentType( "text/html; charset=iso-8859-1" );
 		PrintWriter out = response.getWriter();
@@ -98,4 +107,9 @@ public class InsertarVehiculo extends HttpServlet {
 			System.out.println(listaCoches.size());
 		
 	}
+	public void destroy()
+	{
+		System.out.println("Destruyendo Insertar Vehiculo");
+	}
+	
 }

@@ -12,22 +12,22 @@
   <servlet>
     <description></description>
     <display-name>InsertarVehiculo</display-name>
-    <servlet-name>insertarVehiculo</servlet-name>
+    <servlet-name>InsertarVehiculo</servlet-name>
     <servlet-class>package com.zubiri.jsps.servlets.InsertarVehiculo</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>insertarVehiculo</servlet-name>
+    <servlet-name>InsertarVehiculo</servlet-name>
     <url-pattern>/insertarvehiculo.jr</url-pattern>
   </servlet-mapping>
   
   <servlet>
     <description></description>
     <display-name>BorrarVehiculo</display-name>
-    <servlet-name>borrarVehiculo</servlet-name>
+    <servlet-name>BorrarVehiculo</servlet-name>
     <servlet-class>package com.zubiri.jsps.servlets.BorrarVehiculo</servlet-class>
   </servlet>
   <servlet-mapping>
-    <servlet-name>borrarVehiculo</servlet-name>
-    <url-pattern>/borrarvehiculo.jr</url-pattern>
+    <servlet-name>BorrarVehiculo</servlet-name>
+    <url-pattern>/BorrarVehiculo</url-pattern>
   </servlet-mapping>
 </web-app>
