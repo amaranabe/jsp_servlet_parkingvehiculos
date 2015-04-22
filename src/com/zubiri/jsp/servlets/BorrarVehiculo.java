@@ -1,6 +1,7 @@
 package com.zubiri.jsp.servlets;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -41,6 +42,13 @@ public class BorrarVehiculo extends HttpServlet {
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
+		response.setContentType( "text/html; charset=iso-8859-1" );
+		PrintWriter out = response.getWriter();
+
+		
+		String matricula = request.getParameter("matricula");
+		System.out.println("la matricula es:" + matricula);
+		
 	}
 	
 	public void destroy()
