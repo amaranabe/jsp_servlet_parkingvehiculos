@@ -9,8 +9,8 @@ public class Coche extends Vehiculo {
 	
 	
 	
-	public boolean isAutomatico() {
-		return automatico;
+	public boolean getAutomatico() {
+		return this.automatico;
 	}
 
 	public void setAutomatico(boolean automatico) {
